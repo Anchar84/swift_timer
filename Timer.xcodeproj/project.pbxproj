@@ -12,6 +12,8 @@
 		CE8F89102307056D00B04FD5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE8F890E2307056D00B04FD5 /* Main.storyboard */; };
 		CE8F89122307057000B04FD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE8F89112307057000B04FD5 /* Assets.xcassets */; };
 		CE8F89152307057000B04FD5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE8F89132307057000B04FD5 /* LaunchScreen.storyboard */; };
+		CE8F891E2307088A00B04FD5 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE8F891C2307088A00B04FD5 /* Model.xcdatamodeld */; };
+		CEEB7B152307BBE200346FD0 /* TimeResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB7B142307BBE200346FD0 /* TimeResult.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		CE8F89112307057000B04FD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE8F89142307057000B04FD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE8F89162307057000B04FD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE8F891D2307088A00B04FD5 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		CEEB7B142307BBE200346FD0 /* TimeResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeResult.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +42,7 @@
 		CE8F88FE2307056D00B04FD5 = {
 			isa = PBXGroup;
 			children = (
+				CE8F891C2307088A00B04FD5 /* Model.xcdatamodeld */,
 				CE8F89092307056D00B04FD5 /* Timer */,
 				CE8F89082307056D00B04FD5 /* Products */,
 			);
@@ -60,6 +65,7 @@
 				CE8F89112307057000B04FD5 /* Assets.xcassets */,
 				CE8F89132307057000B04FD5 /* LaunchScreen.storyboard */,
 				CE8F89162307057000B04FD5 /* Info.plist */,
+				CEEB7B142307BBE200346FD0 /* TimeResult.swift */,
 			);
 			path = Timer;
 			sourceTree = "<group>";
@@ -137,6 +143,8 @@
 			files = (
 				CE8F890D2307056D00B04FD5 /* ViewController.swift in Sources */,
 				CE8F890B2307056D00B04FD5 /* AppDelegate.swift in Sources */,
+				CE8F891E2307088A00B04FD5 /* Model.xcdatamodeld in Sources */,
+				CEEB7B152307BBE200346FD0 /* TimeResult.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +342,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CE8F891C2307088A00B04FD5 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CE8F891D2307088A00B04FD5 /* Model.xcdatamodel */,
+			);
+			currentVersion = CE8F891D2307088A00B04FD5 /* Model.xcdatamodel */;
+			name = Model.xcdatamodeld;
+			path = Timer/Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = CE8F88FF2307056D00B04FD5 /* Project object */;
 }

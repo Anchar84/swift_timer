@@ -7,15 +7,32 @@
 //
 
 import UIKit
+import CoreData
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var container: NSPersistentContainer!
 
-
+    func createContainer(completion: @escaping (NSPersistentContainer) -> ()) {
+        let container = NSPersistentContainer(name: "Model")
+        container.loadPersistentStores(completionHandler: {_, error in
+            guard error == nil else {fatalError("Failed to load store")}
+            DispatchQueue.main.async {
+                completion(container)
+            }
+        })
+    }
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        createContainer {container in
+            self.container = container
+            if let vc = self.window?.rootViewController as? ViewController {
+                vc.context = container.viewContext
+                vc.backgroundContext = container.newBackgroundContext()
+            }
+        }
         return true
     }
 
